@@ -1,4 +1,4 @@
-package med.vol.api.entities;
+package med.vol.api.entities.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

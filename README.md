@@ -25,6 +25,31 @@ Indica que o método recebe requisições do tipo GET.
 
 Indica que o método recebe requisições do tipo POST, que enviam dados para API.
 
+@DelleteMapping
+
+Indica que método remove dados do servidor.
+
+@PutMapping
+
+Atualiza dados existentes no servidor.
+
 @RequestBody
 
 Recebe os dados do corpo da requisição que são enviados através uma requisição POST.
+
+@PathParameter
+
+Recuperam valores passados na url.
+
+
+### Bibliotecas
+
+#### JPA
+#### Flyway
+#### Spring Validation
+
+### Padrões de Projeto
+
+#### DTO
+
+Data Transfer Object (DTO) ou simplesmente Transfer Object é um padrão de projetos bastante usado em Java para o transporte de dados entre diferentes componentes de um sistema, diferentes instâncias ou processos de um sistema distribuído ou diferentes sistemas via serialização.

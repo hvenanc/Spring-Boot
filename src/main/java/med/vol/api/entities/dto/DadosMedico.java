@@ -1,13 +1,13 @@
-package med.vol.api.entities;
+package med.vol.api.entities.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import med.vol.api.entities.Especialidade;
 
-public record DadosPaciente(
-
+public record DadosMedico(
         @NotBlank
         String nome,
         @NotBlank
@@ -16,8 +16,10 @@ public record DadosPaciente(
         @NotBlank
         String telefone,
         @NotBlank
-        @Pattern(regexp = "\\d{11}")
-        String cpf,
+        @Pattern(regexp = "\\d{4,6}")
+        String crm,
+        @NotNull
+        Especialidade especialidade,
         @NotNull
         @Valid
         DadosEndereco endereco) {
